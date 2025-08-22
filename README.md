@@ -14,27 +14,13 @@ The training produces an evaluation video (`Final_Evaluation.mp4`) showing the t
 ![HalfCheetah Backward](./evaluation.gif)
 
 
-### Environment
-```python
-class HalfCheetahBackward(gym.Env):
-    def step(self, action):
-        # Reward backward movement, penalize forward movement
-        reward = -1 * info["reward_forward"] + 0.05 * info["reward_ctrl"]
-```
-
 
 ### Meta-Learning Loop
-1. Sample task batch
+1. Sample batch
 2. Inner adaptation: compute gradients and update policy copy
 3. Query evaluation: test adapted policy performance  
-4. Outer update: meta-parameter update using query losses
+4. Outer update: parameter update using query losses
 
-ium installation
-
-### Performance Tips
-- Use GPU acceleration when available
-- Monitor training curves for early stopping
-- Adjust hyperparameters for your hardware
 
 ## References
 
