@@ -8,10 +8,10 @@ This project implements MAML to train a policy that can quickly adapt to make a 
 
 
 
-### Generated Video
+### Result
 The training produces an evaluation video (`Final_Evaluation.mp4`) showing the trained HalfCheetah agent performing backward locomotion.
 
-![HalfCheetah Backward](./Final_Evaluation.mp4)
+![HalfCheetah Backward](./evaluation.gif)
 
 
 ### Environment
