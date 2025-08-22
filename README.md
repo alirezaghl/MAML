@@ -6,25 +6,11 @@ A PyTorch implementation of Model-Agnostic Meta-Learning (MAML) applied to the H
 
 This project implements MAML to train a policy that can quickly adapt to make a HalfCheetah robot run backward. 
 
-
-
 ### Result
 The training produces an evaluation video (`Final_Evaluation.mp4`) showing the trained HalfCheetah agent performing backward locomotion.
 
 ![HalfCheetah Backward](./evaluation.gif)
 
-
-
-### Meta-Learning Loop
-1. Sample batch
-2. Inner adaptation: compute gradients and update policy copy
-3. Query evaluation: test adapted policy performance  
-4. Outer update: parameter update using query losses
-
-
 ## References
 
 - [Model-Agnostic Meta-Learning (MAML)](https://arxiv.org/abs/1703.03400)
-- [Gymnasium Documentation](https://gymnasium.farama.org/)
-- [MuJoCo Physics Engine](https://mujoco.org/)
-
